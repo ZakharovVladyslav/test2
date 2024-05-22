@@ -1,0 +1,114 @@
+.list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    height: 100%;
+
+    &_buttons {
+
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+
+        color: white;
+
+    }
+
+    &_button {
+
+        width: 86px;
+        height: 37px;
+        border-radius: 12px;
+
+        background-color: rgb(47, 47, 47);
+
+        background-image: url('../../resources/Sorting\ option_type2.svg');
+
+    }
+
+    &_button_asc {
+        @extend .list_button;
+
+        background-image: url('../../resources/Sorting\ option_type3svg.svg');
+
+    }
+
+    &_dropdown-button {
+
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 12px;
+
+        background-image: url('../../resources/Vector.svg');
+        background-repeat: no-repeat;
+        background-position: 10px center;
+
+        display: flex;
+        justify-content: flex-end;
+
+        width: 27px;
+        height: 19px;
+
+        padding: 2px 12px 8px 12px;
+
+    }
+
+    &_items {
+
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+/*         height: 100dvh;  
+        overflow: hidden; */
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    &_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 30px;
+
+        color: white;
+        background-color: rgb(47, 47, 47);
+        border-radius: 16px;
+
+
+        padding: 20px 40px;
+    }
+    &_item_add {
+
+        background-color: rgb(47, 47, 47);
+        border-radius: 16px;
+        color: white;
+
+        display: flex;
+        align-items: center;
+
+        margin-top: 40px;
+        padding: 20px 40px;
+
+    }
+    &_item_add_descr {
+
+        margin-left: 7px;
+
+    }
+
+    &_dropdown {
+        
+        display: flex;
+        justify-content: space-between;
+        flex-direction:row;
+
+        margin-right: 20px;
+    }
+}

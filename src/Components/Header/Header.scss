@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_descr {
+
+        font-size: 64px;
+
+    }
+    &_subdescr {
+
+        font-size: 36px;
+
+    }
+    &_search {
+
+        width: 274px;
+        height: 59px;
+        border-radius: 16px;
+        border: none;
+
+        background-color: rgb(51, 51, 51);
+        background-image: url('../../resources/Search\ Icon.svg');
+        background-repeat: no-repeat;
+        background-position: 5% 42%;
+
+        &::placeholder {
+
+            color: white;
+            font-size: 24px;
+            
+            padding: 40px;
+          }
+    }
+}
